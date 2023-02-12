@@ -16,8 +16,8 @@ int main()
     printf("Enter the number of days : ");
     scanf("%d",&N);
     year=N/365;
-    weeks=(1329-year*365)/7;
-    days=(1329-year*365-weeks*7);
+    weeks=(N-year*365)/7;
+    days=(N-year*365-weeks*7);
     printf("Years : %d\n",year);
     printf("Weeks: %d\n",weeks);
     printf("Days: %d",days);
