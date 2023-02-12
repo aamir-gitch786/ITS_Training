@@ -18,3 +18,19 @@ int main()
 /*printf("The revers of %s is %s ",str,strrev(str));
 i think here strrev function run first
 */
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+  char test_chars[] = "XML";
+  int len = strlen(test_chars);
+
+  printf("The reverse of %s is ", test_chars);
+  for (int i = len - 1; i >= 0; i--) {
+    printf("%c", test_chars[i]);
+  }
+  printf("\n");
+
+  return 0;
+}
+
